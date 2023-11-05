@@ -1,0 +1,256 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "TestSignatureAggregator",
+  "sourceName": "contracts/test/TestSignatureAggregator.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IEntryPoint",
+          "name": "entryPoint",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "delay",
+          "type": "uint32"
+        }
+      ],
+      "name": "addStake",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initCode",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "callGasLimit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "verificationGasLimit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "preVerificationGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxFeePerGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxPriorityFeePerGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "paymasterAndData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "signature",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct UserOperation[]",
+          "name": "userOps",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "aggregateSignatures",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "aggregatedSignature",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initCode",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "callGasLimit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "verificationGasLimit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "preVerificationGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxFeePerGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxPriorityFeePerGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "paymasterAndData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "signature",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct UserOperation[]",
+          "name": "userOps",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signature",
+          "type": "bytes"
+        }
+      ],
+      "name": "validateSignatures",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initCode",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "callGasLimit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "verificationGasLimit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "preVerificationGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxFeePerGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxPriorityFeePerGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "paymasterAndData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "signature",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct UserOperation",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "name": "validateUserOpSignature",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506105dd806100206000396000f3fe60806040526004361061003f5760003560e01c8063275e2d7914610044578063451711591461007a57806364c530cd1461008f578063e3563a4f146100bd575b600080fd5b34801561005057600080fd5b5061006461005f36600461035d565b6100dd565b604051610071919061039f565b60405180910390f35b61008d6100883660046103ed565b610157565b005b34801561009b57600080fd5b506100646100aa36600461043b565b5060408051602081019091526000815290565b3480156100c957600080fd5b5061008d6100d836600461047e565b6101bb565b60606000805b83811015610131578484828181106100fd576100fd610515565b905060200281019061010f919061052b565b61011d906020013583610562565b91508061012981610575565b9150506100e3565b506040805160208101839052016040516020818303038152906040529150505b92915050565b604051621cb65b60e51b815263ffffffff821660048201526001600160a01b03831690630396cb609034906024016000604051808303818588803b15801561019e57600080fd5b505af11580156101b2573d6000803e3d6000fd5b50505050505050565b6000805b848110156102135760008686838181106101db576101db610515565b90506020028101906101ed919061052b565b6020013590506101fd8184610562565b925050808061020b90610575565b9150506101bf565b506020821461027a5760405162461bcd60e51b815260206004820152602860248201527f546573745369676e617475726556616c696461746f723a20736967206d757374604482015267081899481d5a5b9d60c21b60648201526084015b60405180910390fd5b60006102888385018561058e565b90508181146103095760405162461bcd60e51b815260206004820152604160248201527f546573745369676e617475726556616c696461746f723a20616767726567617460448201527f6564207369676e6174757265206d69736d6174636820286e6f6e63652073756d6064820152602960f81b608482015260a401610271565b505050505050565b60008083601f84011261032357600080fd5b50813567ffffffffffffffff81111561033b57600080fd5b6020830191508360208260051b850101111561035657600080fd5b9250929050565b6000806020838503121561037057600080fd5b823567ffffffffffffffff81111561038757600080fd5b61039385828601610311565b90969095509350505050565b600060208083528351808285015260005b818110156103cc578581018301518582016040015282016103b0565b506000604082860101526040601f19601f8301168501019250505092915050565b6000806040838503121561040057600080fd5b82356001600160a01b038116811461041757600080fd5b9150602083013563ffffffff8116811461043057600080fd5b809150509250929050565b60006020828403121561044d57600080fd5b813567ffffffffffffffff81111561046457600080fd5b8201610160818503121561047757600080fd5b9392505050565b6000806000806040858703121561049457600080fd5b843567ffffffffffffffff808211156104ac57600080fd5b6104b888838901610311565b909650945060208701359150808211156104d157600080fd5b818701915087601f8301126104e557600080fd5b8135818111156104f457600080fd5b88602082850101111561050657600080fd5b95989497505060200194505050565b634e487b7160e01b600052603260045260246000fd5b6000823561015e1983360301811261054257600080fd5b9190910192915050565b634e487b7160e01b600052601160045260246000fd5b808201808211156101515761015161054c565b6000600182016105875761058761054c565b5060010190565b6000602082840312156105a057600080fd5b503591905056fea264697066735822122037733d6716503422f2dd6f386fa4c995b5f51e690d83cc7d37d7030e6311cbd064736f6c63430008110033",
+  "deployedBytecode": "0x60806040526004361061003f5760003560e01c8063275e2d7914610044578063451711591461007a57806364c530cd1461008f578063e3563a4f146100bd575b600080fd5b34801561005057600080fd5b5061006461005f36600461035d565b6100dd565b604051610071919061039f565b60405180910390f35b61008d6100883660046103ed565b610157565b005b34801561009b57600080fd5b506100646100aa36600461043b565b5060408051602081019091526000815290565b3480156100c957600080fd5b5061008d6100d836600461047e565b6101bb565b60606000805b83811015610131578484828181106100fd576100fd610515565b905060200281019061010f919061052b565b61011d906020013583610562565b91508061012981610575565b9150506100e3565b506040805160208101839052016040516020818303038152906040529150505b92915050565b604051621cb65b60e51b815263ffffffff821660048201526001600160a01b03831690630396cb609034906024016000604051808303818588803b15801561019e57600080fd5b505af11580156101b2573d6000803e3d6000fd5b50505050505050565b6000805b848110156102135760008686838181106101db576101db610515565b90506020028101906101ed919061052b565b6020013590506101fd8184610562565b925050808061020b90610575565b9150506101bf565b506020821461027a5760405162461bcd60e51b815260206004820152602860248201527f546573745369676e617475726556616c696461746f723a20736967206d757374604482015267081899481d5a5b9d60c21b60648201526084015b60405180910390fd5b60006102888385018561058e565b90508181146103095760405162461bcd60e51b815260206004820152604160248201527f546573745369676e617475726556616c696461746f723a20616767726567617460448201527f6564207369676e6174757265206d69736d6174636820286e6f6e63652073756d6064820152602960f81b608482015260a401610271565b505050505050565b60008083601f84011261032357600080fd5b50813567ffffffffffffffff81111561033b57600080fd5b6020830191508360208260051b850101111561035657600080fd5b9250929050565b6000806020838503121561037057600080fd5b823567ffffffffffffffff81111561038757600080fd5b61039385828601610311565b90969095509350505050565b600060208083528351808285015260005b818110156103cc578581018301518582016040015282016103b0565b506000604082860101526040601f19601f8301168501019250505092915050565b6000806040838503121561040057600080fd5b82356001600160a01b038116811461041757600080fd5b9150602083013563ffffffff8116811461043057600080fd5b809150509250929050565b60006020828403121561044d57600080fd5b813567ffffffffffffffff81111561046457600080fd5b8201610160818503121561047757600080fd5b9392505050565b6000806000806040858703121561049457600080fd5b843567ffffffffffffffff808211156104ac57600080fd5b6104b888838901610311565b909650945060208701359150808211156104d157600080fd5b818701915087601f8301126104e557600080fd5b8135818111156104f457600080fd5b88602082850101111561050657600080fd5b95989497505060200194505050565b634e487b7160e01b600052603260045260246000fd5b6000823561015e1983360301811261054257600080fd5b9190910192915050565b634e487b7160e01b600052601160045260246000fd5b808201808211156101515761015161054c565b6000600182016105875761058761054c565b5060010190565b6000602082840312156105a057600080fd5b503591905056fea264697066735822122037733d6716503422f2dd6f386fa4c995b5f51e690d83cc7d37d7030e6311cbd064736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
